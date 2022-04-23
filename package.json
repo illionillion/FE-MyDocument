@@ -1,0 +1,25 @@
+{
+  "name": "fe-my-document",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node js/createjson.js",
+    "server": "http-server -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illionillion/FE-MyDocument.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illionillion/FE-MyDocument/issues"
+  },
+  "homepage": "https://github.com/illionillion/FE-MyDocument#readme",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}
