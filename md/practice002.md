@@ -61,3 +61,5 @@ Ajaxの説明はどれか。
     server ->>- browser: レスポンス
     Note over browser: ページ一部が更新される
 ```
+
+以上の特徴よりGoogle Mapなどで使われている
