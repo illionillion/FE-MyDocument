@@ -389,13 +389,13 @@ code {
     participant WorkingSystem as 現用系
     participant StandbySystem as 待機系
 
-    rect rgb(191, 200, 255)
+    rect rgb(100, 200, 255)
      Note over WorkingSystem, StandbySystem :平常時
      WorkingSystem ->> StandbySystem: 現用系から待機系へ同期させる 
      note right of StandbySystem: 現用系と同じ処理をする
     end
     
-    rect rgb(231, 213, 232)
+    rect rgb(231, 113, 232)
       Note over WorkingSystem, StandbySystem :障害発生時
       WorkingSystem ->> StandbySystem: 待機系へ移行 
       activate StandbySystem
