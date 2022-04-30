@@ -1,18 +1,15 @@
 'use strict'
-// import json from './lib/md.json'
 window.addEventListener('load', e => {
-    // JSONファイル読み込み
-    fetch('./js/lib/md.json')
-    .then(
-        Response => {
-            return Response.json()
-        }
-    )
-    .then(data => {
-        // console.log(data);
+    
+    (async () => {
+        // JSONファイル読み込み
+        const res = await fetch('./js/lib/md.json')
+        const json =await res.json()
+        // console.log(json)
+        // 要素生成
         const liFragment = document.createDocumentFragment()
-        for (const i of data) {
-            // console.log(i);
+        for (const i of json) {
+            // console.log(i)
             const liEle = document.createElement('li')
             const aEle = document.createElement('a')
             aEle.href = `./md/${i}`
@@ -21,6 +18,5 @@ window.addEventListener('load', e => {
             liFragment.appendChild(liEle)
         }
         document.getElementById('list').appendChild(liFragment)
-    })
-    // console.log(json);
+    })()
 })
