@@ -1,14 +1,12 @@
 'use strict'
 window.addEventListener('load', e => {
     
-    // fetctでファイルあるか試す関数いる？
-
+    // fetctでファイルあるか試す関数
     (async () => {
         // JSONファイル読み込み
         const option = {
             method: 'GET'
         }
-        // const res = await fetch('./js/lib/md.jsona', option)
         const res = await fetch('./js/lib/md.json', option)
         console.log(res);
         if(!res.ok) { //パス間違えててデータ取得できなかった場合
