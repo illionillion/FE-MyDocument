@@ -13,7 +13,7 @@ window.addEventListener('load', e => {
             alert('データ取得失敗')
             return
         }
-        const json =await res.json()
+        const json = await res.json()
         // console.log(json)
         // 要素生成
         const liFragment = document.createDocumentFragment()
